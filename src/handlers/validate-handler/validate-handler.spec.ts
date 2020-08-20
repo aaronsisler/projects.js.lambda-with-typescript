@@ -48,9 +48,10 @@ describe("handlers/validate", () => {
     });
   });
 
-  xdescribe("when authentication is successful", () => {
-    beforeEach(() => {
+  describe("when authentication is successful", () => {
+    beforeEach(async () => {
       mockValidateToken = jest.fn().mockResolvedValue({});
+      await handler(event, undefined, callback);
     });
 
     it("should call the response body builder with the correct parameters", () => {
