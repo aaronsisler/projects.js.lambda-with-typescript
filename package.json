@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
-    "lint": "eslint \"./**/*.js\"",
+    "lint": "eslint \"./**/*.ts\"",
     "test": "jest",
     "test:watch": "jest --watch"
   },
